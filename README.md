@@ -41,11 +41,15 @@ When base case is reached, call track_memo() to construct the alignment.
 Results 
 	
  The two implementations were run with 5000 test cases which are permuted from the given two base strings. The base strings are each of size 4 so the string length varies between 8 and 4096. This makes the combined string length (str1.len + str2.len) to vary between 16 and 8192. 
-          The plots in the zip file show the running time (in seconds) and memory usage (in MB) against the problem size. 
+          The plots in the file show the running time (in seconds) and memory usage (in MB) against the problem size. 
 
 Insights
    
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "/Images/TimevsSize.jpeg" height = 350px width = 600px>
+
    We can see from the Time vs Size line plot that time taken by both the implementations is increasing in almost same fashion. But the increase in memory-efficient version is more than the basic approach; this stems from the fact that the basic approach runs in O(nm) and the memory-efficient version runs in O(2nm) where n and m are size of the input strings.
+   
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "/Images/MemoryvsSize.jpeg" height = 350px width = 600px>
 
    The Memory vs Size plot speaks for the hybrid approach. However, we can see that for certain problem sizes there is a drop in the memory usage of the basic approach. This is because the memory depends on the matrix size. Let us consider one such point, say problem size =4102. When the size is 4096, each of the strings has a length of 2048 - a power of 2. When the size is 4102 (not a power of 2), one string is of size 4096 and the other 8. So, points immediately after powers of 2 experience a drop in the memory usage. But it should also be noted that this drop does not go below the value of the efficient solution’s value.
 
