@@ -27,12 +27,16 @@ Implementation
 
 -> main(): Calls the above mentioned functions and calculates the run time and memory usage
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "/Images/DP_1.jpeg" height = 500px width = 200px>
+
  B. Hybrid of divide-and-conquer & dynamic programming	
 
 The file contains all the 8 modules as that of the basic approach but the only difference is in the functionality of the compute_alignment() module.
 
 -> compute_alignment(): Recursively divides str1 into two substrings and computes the optimal break point in str2 by calling compute_memo(). 
 When base case is reached, call track_memo() to construct the alignment.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "/Images/DP_2.jpeg" height = 500px width = 400px>
 
 Results 
 	
