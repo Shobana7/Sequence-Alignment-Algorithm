@@ -1,6 +1,4 @@
 # Sequence Alignment Algorithm
-
-Task Description
 	
   The aim is to implement the sequence alignment problem using two approaches: dynamic programming, a hybrid of divide-and-conquer & dynamic programming. This document summarizes the implementation details and later compares the CPU time and memory usage of the two approaches.
 
